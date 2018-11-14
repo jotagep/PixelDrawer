@@ -1,0 +1,9 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    background-color: #625757;
+}
