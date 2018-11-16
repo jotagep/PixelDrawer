@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Canvas.css';
 
-import html2canvas from 'html2canvas';
+import domToImg from 'dom-to-image';
 
 import Pixel from './Pixel/Pixel';
 
@@ -14,7 +14,7 @@ class Canvas extends Component {
     canvas = React.createRef();
 
     downloadCanvas = () => {
-       return html2canvas(this.canvas.current);
+       return domToImg.toPng(this.canvas.current);
     }
 
     mouseDown = () => {

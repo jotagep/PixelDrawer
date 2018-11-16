@@ -9,8 +9,7 @@ class Content extends Component {
 
     handleBtnClick = () => {
         this.canvasComponent.current.downloadCanvas()
-            .then(cnv => {           
-                const dataURL = cnv.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
+            .then(dataURL => {           
                 const link = document.createElement('a');
                 link.download = 'myPixelDraw.png';
                 link.href = dataURL;

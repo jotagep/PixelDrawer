@@ -1,6 +1,8 @@
 .Pixel {
+    display: block;
+    height: auto;
     box-sizing: border-box;
-    flex: 1 0 auto;
+    flex-basis: auto;
     margin: 0;
     padding: 0;
 }

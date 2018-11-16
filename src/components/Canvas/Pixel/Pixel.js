@@ -10,7 +10,7 @@ const Pixel = (props) => {
             draggable='false'
             style={{
                 flexBasis: 100/props.number + '%',
-                border: props.grid ? '1px solid #666': ''
+                border: props.grid ? '1px solid #666': '0'
             }}
             onMouseDown={props.clicked}
             onMouseEnter={props.mouseEnter}
