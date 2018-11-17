@@ -21,8 +21,8 @@ class Panel extends Component {
         }
     }
 
-    changeColor = (e) => {
-        const newColor = e.target.value;
+    changeColor = (color) => {
+        const newColor = color.hex;
         this.setState({color: newColor});
     }
 
