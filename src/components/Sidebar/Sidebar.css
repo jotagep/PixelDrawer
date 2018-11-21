@@ -1,11 +1,49 @@
+
 .Sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
     align-items: center;
     width: 20%;
+    min-width: 180px;
     height: 100%;
     background-color: #625757;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.Sidebar .Logo {
+    width: 70%
+}
+
+.Sidebar .Controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sidebar .Social {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 2rem;
+    color: #9d8f8f;
+}
+
+.Sidebar .Social a{
+    transition: all .3s ease;
+}
+
+.Sidebar .Social a:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: #bcbab8;
+}
+
+.Sidebar .Social a:not(:last-child){
+    margin-right: 20px;
 }
 
 .Sidebar .flex_container {
@@ -23,6 +61,12 @@
 
 .Sidebar .flex_container .btn:not(:last-child) {
     margin-right: 10px;
+}
+
+
+.Sidebar .Label {
+    font-family: 'Raleway', sans-serif;
+    color: #bcbab8
 }
 
 

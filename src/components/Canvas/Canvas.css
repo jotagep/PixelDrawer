@@ -1,11 +1,14 @@
 .Canvas {
     box-sizing: content-box;
     border-radius: 2px;
-    width: 456px;
-    height: 456px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-items: flex-start;
     flex-wrap: wrap;
     background-color: #f9f9f9;
-    cursor: pointer;
+}
+
+.erase {
+    cursor: context-menu;
 }

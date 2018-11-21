@@ -25,7 +25,7 @@ class Content extends Component {
                     ref={this.canvasComponent}
                 />
                 <button className="btn" onClick={this.handleBtnClick}>
-                    Download
+                    Download <i className="fas fa-download"></i>
                 </button>
             </div>
         );

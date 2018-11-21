@@ -37,6 +37,7 @@ class Canvas extends Component {
 
     render() {
         let totalPixels = [];
+        const styleCanvas = ['Canvas', this.props.erase ? 'erase':'']
 
         for (let i = 0; i < this.props.number; i++) {
             for(let j = 0; j < this.props.number; j++) {
@@ -52,7 +53,7 @@ class Canvas extends Component {
         }
 
         return (
-            <div className="Canvas"
+            <div className={styleCanvas.join(' ')}
                 onMouseDown={this.mouseDown}
                 onMouseUp={this.mouseUp}
                 onMouseLeave={this.mouseUp}

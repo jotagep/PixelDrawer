@@ -8,11 +8,28 @@
 }
 
 .Content .btn {
+    outline: none;
     font-size: 1em;
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     padding: 10px 20px;
     border-radius: 5px;
     background-color: #625757;
     border: none;
-    color: #fff;
+    color: #f9f9f9;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.Content .btn:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 0 11px rgba(33,33,33,.4); 
+}
+
+.Content .btn:not(:last-child) {
+    margin-right: 10px;
+ }
+
+.Content .btn i{
+    margin-left: 5px;
 }
