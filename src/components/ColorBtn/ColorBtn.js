@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { ChromePicker } from 'react-color';
-import './ColorBtn.css';
+
 
 class ColorBtn extends Component {
 
@@ -21,8 +21,9 @@ class ColorBtn extends Component {
 
         const popover = {
             position: 'absolute',
-            right: '-100%',
-            zIndex: 2
+            top: '10%',
+            left: '10%',
+            zIndex: 2,
         };
 
         const backdrop = {
@@ -30,15 +31,17 @@ class ColorBtn extends Component {
             top: '0px',
             right: '0px',
             left: '0px',
-            bottom: '0px'
+            bottom: '0px',
+            backgroundColor: 'rgba(0,0,0,.4)'
         }
 
         const showColor = {
             display: 'inline-block',
-            marginRight: '5px',
-            width: '1rem', 
-            height: '1rem', 
-            backgroundColor: this.props.color
+            marginRight: '7px',
+            width: '32px', 
+            height: '16px', 
+            backgroundColor: this.props.color,
+            borderRadius: '5px'
         }
 
         let picker = null;
@@ -54,7 +57,7 @@ class ColorBtn extends Component {
 
         return (
             <React.Fragment>
-                <div className="btnColor" onClick={this.handlerColorPicker}>
+                <div className="btn" onClick={this.handlerColorPicker}>
                     <span style={showColor} /> {this.props.color}
                 </div>
                 {picker}

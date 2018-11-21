@@ -1,0 +1,38 @@
+.PixelCount {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.PixelCount span{
+    flex: 1;
+    outline: none;
+    display: flex;
+    justify-content: center;  
+    padding: 5px 10px;
+    background-color: #9d8f8f;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 3px rgba(0,0,0,.35);
+    box-sizing: border-box;
+}
+
+.PixelCount .button {
+    color: #111;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all .2s ease;
+}
+
+.PixelCount .button:last-child {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.PixelCount .button:hover {
+    transform: scale(1.1);
+}
