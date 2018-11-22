@@ -1,0 +1,13 @@
+.Popover {
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    z-index: 2;
+}
+
+@media (max-width: 640px) {
+    .Popover {
+        top: 100%;
+        left: 30%;
+    }
+}

@@ -1,6 +1,6 @@
 .PixelCount {
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
@@ -35,4 +35,18 @@
 
 .PixelCount .button:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+    .PixelCount {
+        width: auto;
+        flex: 1;
+        margin-right: 20px;
+    } 
+}
+
+@media (max-width: 435px) {
+    .PixelCount {
+        flex: 1;
+    } 
 }

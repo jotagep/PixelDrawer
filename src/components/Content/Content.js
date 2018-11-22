@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Content.css';
 
+import swal from 'sweetalert2';
+
 import Canvas from '../Canvas/Canvas';
 
 class Content extends Component {
@@ -10,10 +12,22 @@ class Content extends Component {
     handleBtnClick = () => {
         this.canvasComponent.current.downloadCanvas()
             .then(dataURL => {           
-                const link = document.createElement('a');
-                link.download = 'myPixelDraw.png';
-                link.href = dataURL;
-                link.click();
+                swal({
+                    title: 'Name your draw:',
+                    input: "text",
+                    type: 'info',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Download it!'
+                  }).then((result) => {
+                    if (result.value) {
+                        const link = document.createElement('a');
+                        link.download = `${result.value}.png`;
+                        link.href = dataURL;
+                        link.click();
+                    }
+                  })
             });
     }
 

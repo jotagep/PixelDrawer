@@ -12,8 +12,8 @@ import ToggleButton from '../ToggleButton/ToggleButton';
 const sidebar = (props) => {
     return (
         <div className="Sidebar">
-            <a href="https://jotagep.github.io/PixelDrawer/">
-                <img src={logo} className="Logo" alt="Logo"/>
+            <a className="Logo" href="https://jotagep.github.io/PixelDrawer/">
+                <img src={logo} alt="Logo"/>
             </a>
             <div className="Controls">
                 <PixelCount number={props.number}  changeNumber={props.changeNumber}/>
@@ -37,7 +37,6 @@ const sidebar = (props) => {
                 <a href="https://twitter.com/Sir_JotaG" target="_blank" rel='noreferrer noopener'>
                     <i className="fab fa-twitter"></i>
                 </a>
-
             </div>
         </div>
     );

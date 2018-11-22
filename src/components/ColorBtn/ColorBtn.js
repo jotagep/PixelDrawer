@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { ChromePicker } from 'react-color';
 
+import './ColorBtn.css';
 
 class ColorBtn extends Component {
 
@@ -18,13 +19,6 @@ class ColorBtn extends Component {
     }
  
     render() {
-
-        const popover = {
-            position: 'absolute',
-            top: '30%',
-            left: '100%',
-            zIndex: 2,
-        };
 
         const backdrop = {
             position: 'fixed',
@@ -48,7 +42,7 @@ class ColorBtn extends Component {
 
         if (this.state.displayPicker) {
             picker = (
-                <div style= {popover}>  
+                <div className="Popover">  
                     <div style={backdrop} onClick={this.handleClose}></div>
                     <ChromePicker  color={this.props.color} onChange={this.props.changeColor} />
                 </div>

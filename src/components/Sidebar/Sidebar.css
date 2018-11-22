@@ -14,11 +14,16 @@
 }
 
 .Sidebar .Logo {
-    width: 70%
+    display: block;
+    width: 70%;
+}
+
+.Sidebar .Logo img{
+    max-width: 100%;
 }
 
 .Sidebar .Controls {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,7 +54,7 @@
 .Sidebar .flex_container {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
 }
 
 .Sidebar .flex_container .btn {
@@ -76,7 +81,7 @@
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    width: 70%;
+    width: 100%;
     padding: 5px 10px;
     background-color: #9d8f8f;
     border-radius: 5px;
@@ -95,4 +100,83 @@
 .Sidebar .btn.active {
     transform: translateY(-2px) scale(1.1);
     background-color: #bcbab8;
+}
+
+@media (max-width: 980px) {
+    .Sidebar .Logo {
+        width: 60%;
+    }
+
+    .Sidebar .Label {
+        font-size: 14px;
+    }
+
+    .Sidebar .Controls {
+        width: 60%;
+    }
+
+    .Sidebar .Social {
+        width: 60%;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .Sidebar {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;   
+        height: auto;
+        padding: 15px 30px;
+    }
+
+
+    .Sidebar .Label {
+        display: none;
+    }
+
+    .Sidebar .Logo {
+        width: 30%;
+    }
+
+    .Sidebar .Controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+        order: 2;
+        width: auto;
+        flex: 1 0 100%;
+        align-content: center;
+        margin-top: 10px;
+    }
+
+    .Sidebar .btn{
+        width: auto;
+        flex: 1;  
+    }
+
+    .Sidebar .btn:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .Sidebar .flex_container {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .Sidebar .Social {
+        width: 30%;
+        font-size: 1.8rem;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 435px) {
+    .Sidebar .btn:not(:last-child) {
+        margin-right: 0px;
+    }
+
+    .Sidebar .flex_container {
+        flex: 0 0 50%;
+        margin-right: 20px;
+    }
 }

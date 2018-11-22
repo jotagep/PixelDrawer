@@ -10,3 +10,18 @@
     min-height: 600px;
 }
 
+@media (max-width: 980px) {
+    .Panel {
+        width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 640px) {
+    .Panel {
+        flex-direction: column;
+    }
+}

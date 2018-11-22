@@ -4,6 +4,7 @@
   text-align: center;
   background-color: #bcbab8;
   min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,4 +28,13 @@
   transform: rotate(5deg) scale(1.1);
   background-color: #625757;
   border-radius: 5px;
+}
+
+@media (max-width: 980px) {
+  .App footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+  }
 }

@@ -5,7 +5,7 @@ import './PixelCount.css';
 const PixelCount = (props) => {
     return (
         <React.Fragment>
-            <label className="Label">Pixels in row & column</label>
+            <label className="Label">Pixels in a row</label>
             <div className="PixelCount">
                 <div className="button" onClick={() => props.changeNumber(-1)}>
                     <i className="fas fa-minus-circle"></i>
