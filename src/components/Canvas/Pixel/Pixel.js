@@ -16,6 +16,7 @@ const Pixel = (props) => {
             style={pixelStyle}
             onMouseDown={props.clicked}
             onMouseEnter={props.mouseEnter}
+            onTouchMove={props.touchMove}
         >
         </div>
     );
