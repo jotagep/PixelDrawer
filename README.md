@@ -33,4 +33,4 @@ This is a project built in [React 16.6](https://reactjs.org/) to improve my skil
 + [SweetAlert2](https://sweetalert2.github.io/)
 + [Dom-to-img](https://github.com/tsayen/dom-to-image)
 
-### Thanks for all 👍 
+### Thanks for all 👍 !!
